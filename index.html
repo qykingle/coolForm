@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no,target-densitydpi=medium-dpi,minimal-ui">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="switch">
+        <div class="switch-header">
+            <input name="radio" type="radio" value="optionone" id="optionone" checked>
+            <label for="optionone">添加药店</label>
+            <input name="radio" type="radio" value="optiontwo" id="optiontwo">
+            <label for="optiontwo" class="right">添加公司</label>
+            <span aria-hidden="true"></span>
+        </div>
+        <!-- 添加药店 -->
+        <div class="switch-body">
+            <form id="addshop" class="row trans">
+                <span>
+                    <input type="text" class="swing" id="addshop_shopname" placeholder="name">
+                    <label for="exampleInputName1">药店名称</label>
+                </span>
+                <span>
+                    <input type="text"  class="swing" id="addshop_shopid" placeholder="编号">
+                    <label for="exampleInputName1">药店编号</label>
+                </span>
+                <span>  
+                    <select  id="addshop_firmid">
+                        <option value="公司1">公司1</option>
+                        <option value="公司2">公司2</option>
+                        <option value="公司3">公司3</option>
+                        <option value="公司4">公司4</option>
+                    </select>
+                     <label for="exampleInputName1">公司名称</label>
+                </span>
+                <button type="submit" id="addSumbit">Submit</button>
+            </form>
+            <!--添加公司 -->
+            <form id="addfirm" class="form-hidden row trans">
+                <span>
+                    <input type="text"  class="swing"  id="addfirm_firmname" placeholder="name">
+                    <label for="exampleInputName1">公司名称</label>
+
+                </span>
+                <span>
+                    <input  class="swing"  type="text" id="addfirm_firmid" placeholder="编号">
+                    <label for="exampleInputPassName1">公司编号</label>
+
+                </span>
+                <span>
+                    <input  class="swing"  type="text" id="add_long" placeholder="经度">
+                     <label for="exampleInputEmail1">经度</label>              
+                </span>
+                <span>
+                    <input  class="swing"  type="text" id="add_lat" placeholder="纬度">
+                    <label for="exampleInputEmail2">纬度</label>
+
+                </span>
+                <button type="submit" id="addSumbit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js">
+
+    </script>
+</body>
+
+</html>
